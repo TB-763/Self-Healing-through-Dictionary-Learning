@@ -1,0 +1,26 @@
+\begin{table}[H]
+\centering
+\begin{threeparttable}
+\caption{Self-Healing baseline versus the two feature-space dictionary-learning variants on CIFAR-10 ResNet-18.
+Bold values indicate the more favourable absolute value.
+The comparison rows report the relative percentage difference of each variant with respect to Self-Healing.
+Green = improvement over Self-Healing, red = deterioration.}
+\label{tab:summary_cifar10_resnet18_defense_vs_feature}
+\renewcommand{\arraystretch}{0.90}
+\setlength{\tabcolsep}{4pt}
+\footnotesize
+\begin{tabular}{lcccccc}
+\toprule
+\textbf{Model} & \textbf{Setting} & \textbf{Final Val.\ acc.} & \textbf{PC ASR} & \textbf{Final ASR} & \textbf{IASR} & \textbf{Recovery step} \\
+\midrule
+\multirow{5}{*}{ResNet18}
+& Self-Healing & 81.87\% & 99.99\% & \textbf{10.82\%} & \textbf{3406.53} & \textbf{21\,541} \\
+& Feature (Reconstruction) & \textbf{82.31\%} & 99.99\% & 11.18\% & 4412.51 & 23\,365 \\
+& Feature (Sparse-code) & 81.63\% & 99.98\% & 13.85\% & 5396.66 & 25\,839 \\
+\cmidrule(lr){2-7}
+& \textit{Reconstr.\ vs Self-Healing} & \textcolor{green}{+0.54\%} & \textcolor{black}{0.00\%} & \textcolor{red}{+3.25\%} & \textcolor{red}{+29.53\%} & \textcolor{red}{+8.47\%} \\
+& \textit{Sparse-code vs Self-Healing} & \textcolor{red}{-0.29\%} & \textcolor{black}{-0.01\%} & \textcolor{red}{+27.94\%} & \textcolor{red}{+58.42\%} & \textcolor{red}{+19.95\%} \\
+\bottomrule
+\end{tabular}
+\end{threeparttable}
+\end{table}

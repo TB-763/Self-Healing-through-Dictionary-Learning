@@ -1,0 +1,10 @@
+Optimization steps : 29999
+Training time (m)  : 20.60
+Training accuracy  : 1.0000
+Validation accuracy: 0.8242
+Backdoor accuracy  : 0.1038
+Train acc ≥ 30% at step : 131
+Val acc ≥ 30% at step   : 131
+Backdoor acc ≥ 90% at step: 131
+Step distance (val - train): 0
+Defense clean acc ≤ threshold at step: None

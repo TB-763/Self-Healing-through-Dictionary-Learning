@@ -1,0 +1,9 @@
+__pycache__/
+/data/
+!src/data/
+__init__.py
+.devcontainer/devcontainer.json
+.vscode/settings.json
+*.pth
+*.pt
+/checkpoints/

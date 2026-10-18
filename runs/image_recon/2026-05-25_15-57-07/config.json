@@ -1,0 +1,36 @@
+{
+  "MODEL": "GTSRB_FTROJAN",
+  "LOSS_FUNCTION": "CE",
+  "BATCH_SIZE": 128,
+  "OPTIMIZER": "ADAM",
+  "LR": 0.001,
+  "WEIGHT_DECAY": 0.0,
+  "INITIALIZATION_SCALE": 1.0,
+  "OPTIMIZATION_STEPS": 8050,
+  "SEED": 98765,
+  "DTYPE": "torch.float32",
+  "DEVICE": "cuda:0",
+  "PIXEL_ATTACK": false,
+  "FTROJAN_ATTACK": true,
+  "POISONED_FRACTION": 0.05,
+  "FTROJAN_PARAM": {
+    "dataset": "GTSRB",
+    "channel_list": [
+      1,
+      2
+    ],
+    "magnitude": 30,
+    "window_size": 32,
+    "pos_list": [
+      [
+        31,
+        31
+      ],
+      [
+        15,
+        15
+      ]
+    ],
+    "YUV": true
+  }
+}

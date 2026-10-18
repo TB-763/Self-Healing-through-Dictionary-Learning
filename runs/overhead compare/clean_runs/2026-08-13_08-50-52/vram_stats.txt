@@ -1,0 +1,3 @@
+Peak allocated VRAM: 1.29 GB
+Peak reserved VRAM:  2.02 GB
+Peak VRAM (system): 4.39 GB
